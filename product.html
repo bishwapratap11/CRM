@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dammari - Crud </title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+</head>
+<body>
+    <div class="logout-alert">
+        <div class="logout-modal">
+            <div class="modal-logout-header">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span class="pl-5">Are you sure you want to logout?</span>
+            </div>
+            <div class="logout-modal-buttons">
+                <button class="cancel-modal-btn modal-btn">cancel</button>
+                <button class="logout-modal-btn modal-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-toggle">
+        <div class="logo-section">
+            <span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyX3t6qVvNteNvtMsYzXtG3HKUjJy2P0sLEyxmPwtpoyx7jQVSxcxbzcVRIxgFy8ePxWE&usqp=CAU" alt="D" class="menu-icon-img">
+            </span>
+        </div>
+        <div class="menus-section">
+            <ul class="menu-list">
+                <li>
+                    <a href="index.html">
+                        <span><i class="fas fa-th-large menu-icon"></i></span>
+                    </a>
+                    <span class="tooltip-menu">Dashboard</span>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <span><i class="fab fa-dropbox menu-icon"></i></span>
+                    </a>
+                    <span class="tooltip-menu">Products</span>
+                </li>
+                <li>
+                    <a href="customers.html">
+                        <span><i class="fas fa-users menu-icon"></i></i></span>
+                    </a>
+                    <span class="tooltip-menu">Customers</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fas fa-cart-arrow-down menu-icon"></i></i></span>
+                    </a>
+                    <span class="tooltip-menu">Orders</span>
+                </li>
+            </ul>
+        </div>
+        <div class="logout-section">
+                <i class="fas fa-sign-out-alt menu-icon menu-logout">
+                    <span class="tooltip-logout">Logout</span>
+                </i>
+        </div>
+    </div>
+    <div class="add-product-modal">
+        <div class="add-product-container">
+            <div class="add-product-header">
+                <i class="fas fa-pen"></i>
+                <span class="pl-5">Product Details</span>
+            </div>
+            <div class="product-details">
+                <div class="text-side">
+                    <label class="input-boxes">
+                        Product Name <br>
+                        <input type="text" class="input-products">
+                    </label> <br><br>
+                    <label class="input-selects">
+                        Category <br>
+                        <select>
+                            <option value="1">asfdf</option>
+                            <option value="1">asfdf</option>
+                            <option value="1">asfdf</option>
+                            <option value="1">asfdf</option>
+                        </select>
+                    </label> <br><br>
+                    <label class="textarea-boxes">
+                        Product Name <br>
+                        <textarea class="textarea-products"></textarea>
+                    </label> <br><br>
+                    <label class="input-boxes">
+                        Price <br>
+                        <input type="text" class="input-products">
+                    </label>
+                </div>
+                <div class="image-side">
+                    Image Selection <br>
+                    <input type="file" id="fileSelection">
+                    <label for="fileSelection">
+                        <div class="image-selection-area">
+                            <i class="far fa-file-image select-image-icon"></i><br>
+                            select image
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="product-action-btns">
+                <button class="add-product-publish">Publish</button>
+                <button class="add-product-save">save</button>
+                <button class="add-product-cancel">cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container bg-white">
+            <div class="container-fluid">
+                <div class="header">
+                    <div class="menu-section">
+                        <i class="fas fa-bars" id="toggleBtn"></i>
+                    </div>
+                    <div class="avatar-menus">
+                        <span><i class="fas fa-expand" id="expand"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-fluid">
+                <div class="search-and-add">
+                    <div class="add-bar-section">
+                        <button class="add-product"><i class="fas fa-plus"></i><span class="pl-5">Add New Product</span></button>
+                    </div>
+                    <div class="search-new-section">
+                        <label class="">
+                            <input type="text" id="search-product" class="search-product" placeholder="Search product by name, id">
+                        </label>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <table class="table-view-product">
+                        <tr>
+                            <th>#ID</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>
+                                Hair Sty;le Sampoo                                
+                            </td>
+                            <td>Category</td>
+                            <td>Price</td>
+                        </tr>
+                        <tr>
+                            <td>#ID</td>
+                            <td>Name</td>
+                            <td>Category</td>
+                            <td>Price</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/3658bb41b4.js" crossorigin="anonymous"></script>
+</body>
+</html>
